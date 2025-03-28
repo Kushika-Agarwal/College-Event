@@ -50,89 +50,82 @@
             </div>
             <div class="row g-5">
               <style>
-        body {
-            font-family: Arial, sans-serif;
-            
-        }
-        ul{
-            color: white;
-        }
-
-        h4{
-            color: white;
-        }
-        
-        .table-container {
-            width: 100%;
-            overflow-x: auto; /* Enables horizontal scrolling */
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 600px; /* Ensures table doesn't shrink too much */
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #002147;
-        }
-
-        /* Responsive design for small screens */
-        @media screen and (max-width: 600px) {
-            table {
-                border: 0;
-            }
-            table thead {
-                display: none; /* Hide table headers on small screens */
-            }
-            table tr {
-                display: block;
-                margin-bottom: 10px;
-                border: 1px solid #ddd;
-                padding: 10px;
-            }
-            table td {
-                display: block;
-                text-align: right;
-                position: relative;
-                padding-left: 50%;
-            }
-            table td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 10px;
-                font-weight: bold;
-                text-align: left;
-            }
-        }
-        
-        .register-btn {
-              display: block;
-              width: 200px;
-              margin: 20px auto;
-              padding: 10px;
-              background-color: #ff6600;
-              color: white;
-              font-size: 18px;
-              text-align: center;
-              border-radius: 5px;
-              text-decoration: none;
-              font-weight: bold;
-            }
-
-            .register-btn:hover {
-              background-color: #cc5500;
-            }
-            p{
-                color: white;
-            }
-    </style>
+                body {
+                  font-family: Arial, sans-serif;
+                }
+    
+                .table-container {
+                  width: 100%;
+                  overflow-x: auto; /* Enables horizontal scrolling */
+                  overflow-y: hidden;
+                }
+    
+                table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  min-width: 600px; /* Ensures table doesn't shrink too much */
+                }
+    
+                th,
+                td {
+                  border: 1px solid #ddd;
+                  padding: 10px;
+                  text-align: left;
+                }
+    
+                th {
+                  background-color: #002147;
+                }
+    
+                .text-left {
+                  text-align: left !important;
+                }
+    
+                /* Responsive design for small screens */
+                @media screen and (max-width: 600px) {
+                  table {
+                    border: 0;
+                  }
+                  table thead {
+                    display: none; /* Hide table headers on small screens */
+                  }
+                  table tr {
+                    display: block;
+                    margin-bottom: 10px;
+                    border: 1px solid #ddd;
+                    padding: 10px;
+                  }
+                  table td {
+                    display: block;
+                    text-align: left;
+                    position: relative;
+                    padding-left: 10px;
+                  }
+                  table td::before {
+                    content: attr(data-label);
+                    font-weight: bold;
+                    display: block;
+                  }
+                }
+    
+                .register-btn {
+                  display: block;
+                  width: 200px;
+                  margin: 20px auto;
+                  padding: 10px;
+                  background-color: #ff6600;
+                  color: white;
+                  font-size: 18px;
+                  text-align: center;
+                  border-radius: 5px;
+                  text-decoration: none;
+                  font-weight: bold;
+                }
+    
+                .register-btn:hover {
+                  background-color: #cc5500;
+                }
+              </style>
 </head>
 <body>
 
